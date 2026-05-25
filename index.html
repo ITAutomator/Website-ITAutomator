@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Automator – PowerShell Tools for IT Professionals</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Header ── */
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 32px 24px 24px;
+      text-align: center;
+    }
+    header img.logo {
+      max-width: 320px;
+      width: 90%;
+      margin-bottom: 12px;
+    }
+    header p.tagline {
+      font-size: 1.1rem;
+      color: #b0c4de;
+      margin-bottom: 20px;
+    }
+    .btn-github {
+      display: inline-block;
+      background: #238636;
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn-github:hover { background: #2ea043; text-decoration: none; }
+
+    /* ── Hero / intro ── */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 24px;
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+    .hero-text { flex: 1 1 300px; }
+    .hero-text h1 { font-size: 1.8rem; margin-bottom: 12px; color: #1a1a2e; }
+    .hero-text p  { margin-bottom: 10px; color: #444; }
+    .hero-img { flex: 0 0 auto; text-align: center; }
+    .hero-img img { max-width: 180px; width: 100%; }
+
+    /* ── Section headings ── */
+    .section-wrap {
+      max-width: 960px;
+      margin: 0 auto 48px;
+      padding: 0 24px;
+    }
+    .section-wrap h2 {
+      font-size: 1.4rem;
+      color: #1a1a2e;
+      border-bottom: 2px solid #d0d7de;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* ── Featured card (IntuneApp) ── */
+    .featured-card {
+      background: #fff;
+      border: 1px solid #d0d7de;
+      border-left: 5px solid #0066cc;
+      border-radius: 8px;
+      padding: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .featured-card .card-body { flex: 1 1 280px; }
+    .featured-card h3 { font-size: 1.3rem; margin-bottom: 8px; color: #1a1a2e; }
+    .featured-card p  { color: #444; margin-bottom: 12px; }
+    .featured-card .card-screenshot { flex: 0 0 auto; }
+    .featured-card .card-screenshot img { max-width: 360px; width: 100%; border-radius: 4px; border: 1px solid #d0d7de; }
+    .featured-card ul { padding-left: 18px; color: #444; margin-bottom: 12px; }
+    .featured-card ul li { margin-bottom: 4px; }
+    .btn-primary {
+      display: inline-block;
+      background: #0066cc;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #0052a3; text-decoration: none; }
+
+    /* ── Tool grid ── */
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .tool-card {
+      background: #fff;
+      border: 1px solid #d0d7de;
+      border-radius: 8px;
+      padding: 18px 20px;
+      transition: box-shadow 0.2s;
+    }
+    .tool-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .tool-card h3 { font-size: 1rem; margin-bottom: 6px; color: #1a1a2e; }
+    .tool-card p  { font-size: 0.9rem; color: #555; margin-bottom: 10px; }
+    .tool-card a.tool-link {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #0066cc;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: #1a1a2e;
+      color: #8b97a8;
+      text-align: center;
+      padding: 24px;
+      font-size: 0.9rem;
+    }
+    footer a { color: #7eb8f7; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header>
+  <img class="logo"
+       src="https://raw.githubusercontent.com/ITAutomator/Assets/main/WebsiteITAutomator/Logo7.png"
+       alt="IT Automator logo" />
+  <p class="tagline">Free PowerShell tools for IT professionals</p>
+  <a class="btn-github" href="https://github.com/ITAutomator" target="_blank">
+    ★ View all projects on GitHub
+  </a>
+</header>
+
+<!-- ══════════════ HERO ══════════════ -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>Automate Your IT Workflow</h1>
+    <p>IT Automator publishes free, open-source PowerShell tools designed to help IT professionals manage Microsoft 365, Intune, Entra ID, VMware, Meraki, and more — faster and with less manual effort.</p>
+    <p>All tools are available on GitHub. Download, run, and adapt them for your environment.</p>
+    <a class="btn-primary" href="https://github.com/ITAutomator" target="_blank">Browse GitHub →</a>
+  </div>
+  <div class="hero-img">
+    <img src="https://raw.githubusercontent.com/ITAutomator/Assets/main/WebsiteITAutomator/Robot.png"
+         alt="IT Automator robot mascot" />
+  </div>
+</div>
+
+<!-- ══════════════ FEATURED: IntuneApp ══════════════ -->
+<div class="section-wrap">
+  <h2>Featured Project</h2>
+  <div class="featured-card">
+    <div class="card-body">
+      <h3>IntuneApp — Deploy Windows Apps via Intune</h3>
+      <p>Create, package, and publish Windows applications to your Intune endpoints with a simple menu-driven tool. IntuneApp handles detection, install, uninstall, and requirements logic so you don't have to.</p>
+      <ul>
+        <li>Pre-packaged installers for 30+ common apps (Chrome, 7-Zip, Notepad++, and more)</li>
+        <li>Bulk install apps across your fleet in minutes</li>
+        <li>Org Prep wizard connects to your Entra tenant automatically</li>
+        <li>Assign apps via Entra Groups — no complex Intune policy needed</li>
+      </ul>
+      <a class="btn-primary" href="https://github.com/ITAutomator/IntuneApp" target="_blank">View on GitHub →</a>
+      &nbsp;
+      <a href="https://www.itautomator.com/intuneapp" style="font-size:0.9rem;">Read blog post</a>
+    </div>
+    <div class="card-screenshot">
+      <img src="https://raw.githubusercontent.com/ITAutomator/Assets/main/IntuneApp/MainScreen.png"
+           alt="IntuneApp main screen" />
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ OTHER TOOLS ══════════════ -->
+<div class="section-wrap">
+  <h2>More Tools</h2>
+  <div class="tool-grid">
+
+    <div class="tool-card">
+      <h3>M365 User License Change</h3>
+      <p>Bulk-adjust Microsoft 365 licenses for users via a simple CSV. Safe to run multiple times — already-licensed users are skipped.</p>
+      <a class="tool-link" href="https://github.com/ITAutomator/M365UserLicenseChange" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="tool-card">
+      <h3>User Password Expiration</h3>
+      <p>Manage Entra ID password expiration settings for your tenant and users. View, export, and update settings that have no UI in the Entra admin portal.</p>
+      <a class="tool-link" href="https://github.com/ITAutomator/UserPasswordExpiration" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="tool-card">
+      <h3>PC Info</h3>
+      <p>Instantly display detailed information about a PC and the current user — hardware, OS, network, and more. Run as user (no admin required).</p>
+      <a class="tool-link" href="https://github.com/ITAutomator/PCInfo" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="tool-card">
+      <h3>Meraki Manager</h3>
+      <p>Manage Cisco Meraki networks from PowerShell. Retrieve SSID reports, batch-update SSIDs via CSV, and manage DNS profiles across your org.</p>
+      <a class="tool-link" href="https://github.com/ITAutomator/MerakiManager" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="tool-card">
+      <h3>VMware Manager</h3>
+      <p>Menu-driven PowerShell tool for managing VMware ESXi servers in smaller environments — no vCenter required.</p>
+      <a class="tool-link" href="https://github.com/ITAutomator/VMWareManager" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="tool-card">
+      <h3>Room Settings</h3>
+      <p>Report and update Microsoft Teams Room settings interactively from PowerShell. Quick, scriptable, and easy to read.</p>
+      <a class="tool-link" href="https://github.com/ITAutomator/RoomSettings" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="tool-card">
+      <h3>Entra Sync Check</h3>
+      <p>For hybrid 365 environments — run on your Entra Connect server to verify and report on directory sync health.</p>
+      <a class="tool-link" href="https://github.com/ITAutomator/EntraSyncCheck" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="tool-card">
+      <h3>Simple Quote for Excel</h3>
+      <p>Generate clean PDF quotes directly from an Excel table. A lightweight quoting solution that needs no extra software.</p>
+      <a class="tool-link" href="https://github.com/ITAutomator/Simple-Quote-for-Excel" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="tool-card">
+      <h3>GitHubSync</h3>
+      <p>Sync a local folder with your GitHub repository using a simple script — no Git CLI knowledge required.</p>
+      <a class="tool-link" href="https://github.com/ITAutomator/GitHubSync" target="_blank">View on GitHub →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <p>
+    All tools are free and open-source. &nbsp;|&nbsp;
+    <a href="https://github.com/ITAutomator" target="_blank">github.com/ITAutomator</a>
+    &nbsp;|&nbsp;
+    <a href="https://github.com/sponsors/ITAutomator" target="_blank">Become a sponsor</a>
+  </p>
+  <p style="margin-top:8px;">© IT Automator. Hosted on CloudFlare via GitHub.</p>
+</footer>
+
+</body>
+</html>
